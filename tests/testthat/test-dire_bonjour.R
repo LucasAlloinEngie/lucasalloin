@@ -2,6 +2,6 @@
 
 test_that("bonjour works", {
   expect_true(inherits(dire_bonjour, "function"))
-  expect_equal(dire_bonjour("Vincent"), "Bonjour Vincent")
-  expect_equal(dire_bonjour(), "Bonjour toi")
+  expect_equal(dire_bonjour("Vincent"), "Bonjour, Vincent")
+  expect_equal(dire_bonjour(), "Bonjour, toi")
 })

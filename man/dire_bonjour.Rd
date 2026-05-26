@@ -16,7 +16,7 @@ character : A greeting message.
 Dire Bonjour
 }
 \details{
-This function takes a name as input and returns a greeting message in the format "Bonjour \{prenom\} !". If no name is provided, it defaults to "toi".
+This function takes a name as input and returns a greeting message in the format "Bonjour, \{prenom\} !". If no name is provided, it defaults to "toi".
 }
 \examples{
 dire_bonjour(prenom = "Vincent")
