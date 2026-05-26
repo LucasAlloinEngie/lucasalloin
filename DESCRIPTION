@@ -3,9 +3,7 @@ Title: Exercice R Niveau 3 - Shiny
 Version: 0.0.0.9000
 Authors@R: 
     person("John", "Doe", , "john@email.me", role = c("aut", "cre"))
-Description: Use Rmarkdown First method to build your package. Start your
-    package with documentation. Everything can be set from a Rmarkdown
-    file in your project.
+Description: Exercice préliminaire à la formation de niveau 3, livré sous forme de package.
 License: MIT + file LICENSE
 Depends: 
     R (>= 3.5)
