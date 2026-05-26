@@ -1,8 +1,8 @@
 ---
-title: "Minimal"
+title: "Be Polite"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Minimal}
+  %\VignetteIndexEntry{Be Polite}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

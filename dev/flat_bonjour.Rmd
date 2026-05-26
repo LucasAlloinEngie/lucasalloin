@@ -35,14 +35,14 @@ glue("Bonjour {prenom} !")
 #' @param prenom character : Name of the person to greet. Default is "toi".
 #'
 #' @returns character : A greeting message.
-#' @details This function takes a name as input and returns a greeting message in the format "Bonjour \{prenom\} !". If no name is provided, it defaults to "toi".
+#' @details This function takes a name as input and returns a greeting message in the format "Bonjour, \{prenom\} !". If no name is provided, it defaults to "toi".
 #' @importFrom glue glue
 #' 
 #' @export
 #'
 #' @examples
 dire_bonjour <- function(prenom = "toi") {
-  texte <- glue("Bonjour {prenom}")
+  texte <- glue("Bonjour, {prenom}")
   return(texte)
 }
 ```
@@ -55,8 +55,8 @@ dire_bonjour()
 ```{r tests-bonjour}
 test_that("bonjour works", {
   expect_true(inherits(dire_bonjour, "function"))
-  expect_equal(dire_bonjour("Vincent"), "Bonjour Vincent")
-  expect_equal(dire_bonjour(), "Bonjour toi")
+  expect_equal(dire_bonjour("Vincent"), "Bonjour, Vincent")
+  expect_equal(dire_bonjour(), "Bonjour, toi")
 })
 ```
 
@@ -64,5 +64,5 @@ test_that("bonjour works", {
 ```{r development-inflate, eval=FALSE}
 # Run but keep eval=FALSE to avoid infinite loop
 # Execute in the console directly
-fusen::inflate(flat_file = "dev/flat_bonjour.Rmd", vignette_name = "Minimal")
+fusen::inflate(flat_file = "dev/flat_bonjour.Rmd", vignette_name = "Be Polite")
 ```

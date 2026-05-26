@@ -6,7 +6,7 @@
 #' @param prenom character : Name of the person to greet. Default is "toi".
 #'
 #' @returns character : A greeting message.
-#' @details This function takes a name as input and returns a greeting message in the format "Bonjour \{prenom\} !". If no name is provided, it defaults to "toi".
+#' @details This function takes a name as input and returns a greeting message in the format "Bonjour, \{prenom\} !". If no name is provided, it defaults to "toi".
 #' @importFrom glue glue
 #' 
 #' @export
@@ -15,6 +15,6 @@
 #' dire_bonjour(prenom = "Vincent")
 #' dire_bonjour()
 dire_bonjour <- function(prenom = "toi") {
-  texte <- glue("Bonjour {prenom}")
+  texte <- glue("Bonjour, {prenom}")
   return(texte)
 }
