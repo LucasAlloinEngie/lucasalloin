@@ -3,10 +3,10 @@ flat_bonjour.Rmd:
   state: active
   R: R/dire_bonjour.R
   tests: tests/testthat/test-dire_bonjour.R
-  vignettes: vignettes/minimal.Rmd
+  vignettes: vignettes/be-polite.Rmd
   inflate:
     flat_file: dev/flat_bonjour.Rmd
-    vignette_name: Minimal
+    vignette_name: Be Polite
     open_vignette: true
     check: true
     document: true
