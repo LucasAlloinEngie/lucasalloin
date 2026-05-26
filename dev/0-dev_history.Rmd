@@ -130,3 +130,11 @@ devtools::build(vignettes = TRUE)
 fusen::init_share_on_github()
 ```
 
+# Insert data in package
+
+```{r, eval=FALSE}
+dir.create("inst")
+
+
+```
+
