@@ -130,7 +130,6 @@ devtools::build(vignettes = TRUE)
 fusen::init_share_on_github()
 ```
 
-
 # Put data in the package
 
 ```{r, eval=FALSE}
@@ -139,6 +138,8 @@ usethis::use_data_raw("pays")
 # checkhelper::use_data_doc(name = "pays", description = "Liste des pays ainsi que des codes ISO 3166-1 associés")
 checkhelper::fix_dataset_doc(name = "pays", description = "Liste des pays ainsi que des codes ISO 3166-1 associés", overwrite = TRUE)
 attachment::att_amend_desc()
+# To put raw data for users
+dir.create("inst")
 
 ```
 
